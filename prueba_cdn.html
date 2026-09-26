@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba CDN - utileria.js</title>
+</head>
+<body>
+
+    <h1>Prueba de mi librería utileria.js</h1>
+    <p>Abre la consola con F12 para ver los resultados.</p>
+
+    <!-- Mi librería desde Internet -->
+    <script src="https://cdn.jsdelivr.net/gh/uriieleduardoguzmanramirez/Actividad2@main/js/utileria.js"></script>
+
+    <script>
+        console.log("Correo correcto:", validarCorreo("alumno@gmail.com"));
+        console.log("Correo incorrecto:", validarCorreo("alumnogmail.com"));
+
+        console.log("Solo letras:", soloLetras("Uriel Eduardo"));
+        console.log("Longitud:", validarLongitud("12345678", 8));
+
+        console.log("Edad:", calcularEdad("2000-05-10"));
+        console.log("Mayor de edad:", esMayorDeEdad("2000-05-10"));
+
+        console.log("Contraseña:", validarPassword("Alumno123!"));
+        console.log("Teléfono:", validarTelefono("9511234567"));
+        console.log("Nombre:", formatearNombre("uriel eduardo"));
+    </script>
+
+</body>
+</html>

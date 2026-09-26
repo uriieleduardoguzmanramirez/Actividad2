@@ -40,7 +40,7 @@ function validarPassword(password) {
     let numero = /[0-9]/.test(password);
     let especial = /[^A-Za-z0-9]/.test(password);
 
-    return password.length >= 8 &&s
+    return password.length >= 8 &&
            mayuscula &&
            minuscula &&
            numero &&
